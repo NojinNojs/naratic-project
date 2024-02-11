@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  background-color: #f6f8fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.logo img {
+  max-width: 50px;
+  border-radius: 5px;
+}
+
+nav {
+  display: flex; /* Flexbox untuk mengatur layout */
+  justify-content: space-between; /* Logo kiri, menu kanan */
+  align-items: center;
+  margin: 10px;
+}
+
+.logo {
+  display: block;
+  float: left;
+  margin: 5px;
+}
+
+.naratic-navbar {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu-toggle {
+  display: none; /* Disembunyikan untuk desktop */
+}
+
+nav ul {
+  /* ul tetap dibutuhkan untuk dropdown */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Susun item menu pada desktop */
+}
+
+nav ul li {
+  /* display: inline-block; */
+  margin-left: 20px;
+  position: relative;
+}
+
+nav ul li ul {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 98;
+  border-radius: 4px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #111;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Dropdown */
+nav ul li.dropdown {
+  position: static;
+}
+
+nav ul li.dropdown:hover ul {
+  display: block;
+}
+
+.arrow {
+  border: 1px solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  margin: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+nav ul li ul li {
+  display: block;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+nav ul li ul li a {
+  color: #333;
+}
+
+nav ul li ul li a:hover {
+  color: #111;
+}
+
+/* Main Content */
+main {
+  padding: 80px 20px 60px;
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.fade-in {
+  opacity: 100%;
+  animation: fade-in 1s ease-in-out;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #222;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Utility & Additional Classes */
+.text-center {
+  text-align: center;
+}
+
+/* Gaya dasar sama seperti index.html */
+
+.about-content {
+  text-align: center;
+  margin-top: 80px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo img:hover {
+  animation: zoom-in 0.5s ease-in-out;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Media Queries (Responsif) */
+@media (max-width: 768px) {
+  header {
+    position: static;
+  }
+
+  .naratic-navbar {
+    display: block;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .menu-toggle {
+    /* background-image: url("assets/favicon/menu-burger.svg"); */
+    display: block;
+    font-size: 30px;
+    height: 44px;
+    /* border: none; */
+    padding: 5px;
+    border-color: black;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .responsive-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    justify-content: center; /* Untuk memposisikan tengah */
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    /* Styling dasar navbar */
+    position: absolute;
+    padding-bottom: 10px;
+    top: 10%; /* Sesuaikan nilai ini */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #f6f8fa;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+
+    /* Sembunyi secara default */
+    display: none;
+  }
+
+  /* Dropdown Styling */
+  .dropdown {
+    position: relative;
+  }
+
+  /* Tautan utama dropdown */
+  .dropdown a {
+    display: block; /* Ambil lebar penuh secara horizontal */
+    padding: 15px; /* Sesuaikan padding di sekitar teks */
+  }
+
+  .dropdown ul {
+    /* Submenu/dropdown list */
+    position: absolute;
+    left: 25%;
+    top: 80%; /* Posisikan dibawah tautan */
+    display: none;
+    width: 50%; /* Lebar penuh */
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown:hover ul {
+    /* Tampilkan ul ketika hover */
+    display: block;
+  }
+
+  .menu-toggle.active + .nav-list {
+    /* Target .nav-list */
+    display: block;
+  }
+
+  .menu-toggle.active + ul {
+    /* Tidak menggunakan `.nav-list` */
+    display: block;
+    text-align: center;
+  }
+}
