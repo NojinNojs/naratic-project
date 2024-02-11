@@ -1,8 +1,8 @@
-<h1><img src="https://flaticon.com/icons/png/512/123/123456.png" alt="Logo Naratic"> Naratic</h1> <!-- contoh logo, Anda dapat menggantinya dengan logo Anda sendiri -->
+<h1><img src="assets/favicon/favicon.ico" alt="Logo Naratic"> Naratic</h1> <!-- contoh logo, Anda dapat menggantinya dengan logo Anda sendiri -->
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+><img src="naratic-ss.jpeg" alt="Logo Naratic" href="">
 
-<p>Screenshot Naratic Website: URL website demo</p>
 
 <p><strong>Website yang mengusung tema elegan, minimalis, serta memiliki navigasi yang user-friendly adalah kuncinya.</strong>  Situs ini juga diadaptasi secara maksimal untuk berbagai ukuran layar!</p>
 
