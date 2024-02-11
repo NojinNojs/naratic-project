@@ -29,7 +29,7 @@
 <li><strong>Desain Modern:</strong> Desain web modern dan minimalis memberikan tampilan  yang fresh, rapi, dan mudah dinavigasi.</li>
 </ul>
 
-<figure><img src="naratic-ss.jpeg" alt="Tampilan utama situs web Naratic"><figcaption>Tampilan utama situs web Naratic. Sumber: webflow.com</figcaption></figure> <!-- contoh caption gambar -->
+<figure><img src="naratic-ss.jpeg" alt="Tampilan utama situs web Naratic" href="https://naratic.vercel.app/"><figcaption>Tampilan utama situs web Naratic. Sumber: webflow.com</figcaption></figure> <!-- contoh caption gambar -->
 
 <h2>Teknologi yang Memberdayakan Naratic</h2>
 
@@ -37,8 +37,7 @@
 <li><strong>HTML5:</strong> Dasar pondasi struktur website</li>
 <li><strong>CSS3:</strong> Menjadi jantung untuk gaya dan visual menarik website Naratic.</li>
 <li><strong>JavaScript:</strong> Menghidupkan elemen dinamis seperti tombol menu dan efek transisi.</li>
-<li><strong>Font Awesome:</strong>  menyediakan kumpulan ikon praktis dan cantik.</li>
-<li><strong>Flaticon CDN:</strong> Sumber untuk ikon hamburger dan "X"  yang berkelas.</li>
+<li><strong>Flaticon CDN:</strong> Sumber untuk ikon yang berkelas.</li>
 </ul>
 
 <h2>Jalankan di Perangkatmu!</h2>
@@ -67,9 +66,9 @@
 
 <p>Proyek ini dilisensikan di bawah Lisensi MIT - lihat file <a href="LICENSE">LICENSE</a> untuk detailnya.</p>
 
-<h2>Demonstrasi Website</h2>
+<h2>Link Website</h2>
 
-<p>Anda dapat melihat demonstrasi website Naratic di sini: <a href="https://webflow.com/made-in-webflow/demo">https://webflow.com/made-in-webflow/demo</a></p>
+<p>Anda dapat melihat website Naratic di sini: <a href="https://naratic.vercel.app/">https://naratic.vercel.app/</a></p>
 
 <h2>Terima Kasih! ❤️</h2>
 
