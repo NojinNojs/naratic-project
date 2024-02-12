@@ -29,7 +29,7 @@
 <li><strong>Desain Modern:</strong> Desain web modern dan minimalis memberikan tampilan  yang fresh, rapi, dan mudah dinavigasi.</li>
 </ul>
 
-<figure><img src="naratic-ss.jpeg" alt="Tampilan utama situs web Naratic" href="https://naratic.vercel.app/"><figcaption>Tampilan utama situs web Naratic. Sumber: webflow.com</figcaption></figure> <!-- contoh caption gambar -->
+<figure><img src="naratic-ss.jpeg" alt="Tampilan utama situs web Naratic" href="https://naratic.vercel.app/"><figcaption>Tampilan utama situs web Naratic. Sumber: [naratic.vercel.app](https://naratic.vercel.app/)</figcaption></figure> <!-- contoh caption gambar -->
 
 <h2>Teknologi yang Memberdayakan Naratic</h2>
 
