@@ -1,3 +1,4 @@
+/* Basic Styles & Resets */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
   background-color: #fff;
 }
 
-/* Header */
+/* Header Styles */
 header {
   background-color: #f6f8fa;
   position: fixed;
@@ -37,8 +38,8 @@ header {
 }
 
 nav {
-  display: flex; /* Flexbox untuk mengatur layout */
-  justify-content: space-between; /* Logo kiri, menu kanan */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 10px;
 }
@@ -55,19 +56,17 @@ nav {
 }
 
 .menu-toggle {
-  display: none; /* Disembunyikan untuk desktop */
+  display: none;
 }
 
 nav ul {
-  /* ul tetap dibutuhkan untuk dropdown */
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Susun item menu pada desktop */
+  display: flex;
 }
 
 nav ul li {
-  /* display: inline-block; */
   margin-left: 20px;
   position: relative;
 }
@@ -132,15 +131,69 @@ nav ul li ul li a {
 nav ul li ul li a:hover {
   color: #111;
 }
+/* Sidebar Styles */
+.sidebar-menu-toggle {
+  display: none; /* Hidden for desktop initially */
+}
 
-/* Main Content */
+#sidebar {
+  position: sticky;
+  top: 9%; /* Position below header/navbar */
+  left: 0;
+  width: 20%;
+  height: calc(100vh - 9%); /* Adjust height for header */
+  background-color: #f0f0f0; /* Lighter background color */
+  overflow-y: auto;
+  border-right: 1px solid #eee; /* Subtle right border */
+}
+
+.sidebar-list {
+  padding: 20px;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee; /* Add bottom border */
+}
+
+.sidebar-title h3 {
+  margin: 0; /* Remove default margin on headings */
+  text-align: left;
+}
+
+.sidebar-content a {
+  display: block;
+  padding: 10px 0;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #222;
+}
+
+.sidebar-content a:hover,
+.sidebar-list-content.active a {
+  background-color: #ddd; /* Slightly darker hover background */
+}
+
+/* Main Content Styles */
 main {
-  padding: 80px 20px 60px;
+  padding: 80px 20px 60px 0;
 }
 
 .hero-text {
   text-align: center;
   margin-top: 80px;
+}
+#main-artikel {
+  display: flex;
+  flex: 1;
+}
+.artikel {
+  flex: 1;
+  margin-left: 20px; 
+  padding: 20px; 
 }
 
 h1 {
@@ -153,6 +206,11 @@ p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 15px;
+}
+
+.about-content {
+  text-align: center;
+  margin-top: 80px;
 }
 
 .fade-in {
@@ -175,11 +233,17 @@ p {
   transition: 0.3s ease-in-out;
 }
 
+.sidebar-close-menu-toggle {
+  display: none;
+}
+
 .button:hover {
   background-color: #222;
   padding: 10px 20px;
   border-radius: 20px;
 }
+
+
 
 /* Footer */
 footer {
@@ -189,18 +253,12 @@ footer {
   padding: 20px 0;
 }
 
-/* Utility & Additional Classes */
+/* Utility Classes */
 .text-center {
   text-align: center;
 }
 
-/* Gaya dasar sama seperti index.html */
-
-.about-content {
-  text-align: center;
-  margin-top: 80px;
-}
-
+/* Media Queries */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -223,7 +281,6 @@ footer {
   }
 }
 
-/* Media Queries (Responsif) */
 @media (max-width: 768px) {
   header {
     position: static;
@@ -236,11 +293,9 @@ footer {
   }
 
   .menu-toggle {
-    /* background-image: url("assets/favicon/menu-burger.svg"); */
     display: block;
     font-size: 30px;
     height: 44px;
-    /* border: none; */
     padding: 5px;
     border-color: black;
     background-color: transparent;
@@ -287,46 +342,94 @@ footer {
     text-align: center;
     z-index: 1;
     transition: all 0.3s ease-in-out;
-
-    /* Sembunyi secara default */
     display: none;
   }
 
-  /* Dropdown Styling */
   .dropdown {
     position: relative;
   }
 
-  /* Tautan utama dropdown */
   .dropdown a {
-    display: block; /* Ambil lebar penuh secara horizontal */
-    padding: 15px; /* Sesuaikan padding di sekitar teks */
+    display: block;
+    padding: 15px; 
   }
 
   .dropdown ul {
-    /* Submenu/dropdown list */
     position: absolute;
     left: 25%;
-    top: 80%; /* Posisikan dibawah tautan */
+    top: 80%; 
     display: none;
-    width: 50%; /* Lebar penuh */
+    width: 50%; 
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .dropdown:hover ul {
-    /* Tampilkan ul ketika hover */
     display: block;
   }
 
   .menu-toggle.active + .nav-list {
-    /* Target .nav-list */
     display: block;
   }
 
   .menu-toggle.active + ul {
-    /* Tidak menggunakan `.nav-list` */
     display: block;
     text-align: center;
   }
+
+  .sidebar-menu-toggle {
+    position: sticky;
+    top: 50px;
+    display: block; 
+    font-size: 30px;
+    height: 44px;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    border-color: black;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #sidebar {
+    position: absolute;
+    top: 0; 
+    left: -100%;
+    width: 80%; 
+    height: 100%; 
+    background-color: #f0f0f0;
+    overflow-y: auto; 
+    border-right: 1px solid #eee; 
+    transition: left 0.3s ease; 
+  }
+
+  .sidebar.active { 
+    left: 0; 
+  }
+
+  .sidebar-close-menu-toggle {
+    display: block;  /* Ensure the button is visible */
+    position: absolute; /* Allows precise positioning within the sidebar */
+    top: 15px; /* Adjust top/right positions as needed */
+    right: 15px;
+    background-color: transparent; /* Or the background color of your choice */
+    border: none; /* Clear any default button borders */
+    font-size: 20px; /* Size of the close icon */
+    cursor: pointer;
+  }
+  
+  .sidebar-close-menu-toggle i {
+    color: #333; /* Your desired color for the close icon */
+  }
+  
+
+  #main-artikel {
+    width: 100%; 
+  }
+
+  .artikel {
+    margin-left: 0; 
+}
 }
