@@ -11,7 +11,7 @@
       name="keywords"
       content="html, css, javascript, web development, coding indonesia, naratic, belajar html dari nol, belajar html dan css, website belajar html, html belajar, belajar coding css, belajar html mulai dari 0, belajar html lengkap, belajar html dari 0, pembelajaran html, belajar tentang html, belajar web development, memp mempelajari html, belajar html pemula, belajar html mulai dari nol, belajar html untuk pemula, cara belajar html dari 0, belajar bahasa html, belajar bahasa html dan css, belajar bahasa html untuk pemula, belajar bahasa pemrograman html, belajar bahasa program html, belajar basic html, belajar buat html, belajar buat web html, belajar css dan html, belajar dasar dasar html, belajar dasar html, belajar dasar html dan css, belajar html & css, belajar html bagi pemula, belajar html dan css dasar, belajar html dan css lengkap, belajar html dan css pemula, belajar html dan css untuk pemula, belajar html dari awal, belajar html dasar, belajar html lengkap untuk pemula, belajar html mudah, belajar html pemula dari 0, belajar html sederhana, belajar html web, belajar membuat html, belajar membuat web html, belajar pemrograman html, belajar pemrograman web html dasar, belajar tag html, belajar web html, belajar website html, belajarhtml, cara belajar bahasa html, cara belajar coding html, cara belajar html, cara belajar html bagi pemula, cara belajar html dan css, cara belajar html dasar, cara belajar html pemula, cara belajar html untuk pemula, cara mempelajari html, cara mudah belajar html, dasar belajar html, html css dasar, html css pemula, html dan css dasar, html pemula, panduan belajar html, panduan lengkap belajar html, situs belajar html, tutorial belajar html, tutorial belajar html dasar untuk pemula, tutorial dasar html, tutorial html lengkap, tutorial html pemula, tutorial html untuk pemula, coding for indonesia, belajar css dasar, belajar css lengkap, belajar css pemula, belajar css untuk pemula, belajar dasar css, belajar membuat web dengan html dan css, cara belajar css, cara belajar css dengan cepat, css belajar, css pemula, css untuk pemula, tutorial belajar css, tutorial css lengkap, tutorial css pemula, tutorial css untuk pemula, belajar coding html dan css, belajar coding html pemula, belajar coding html untuk pemula"
     />
-    <title>Pengenalan HTML - Naratic</title>
+    <title>Table - Naratic</title>
     <link rel="stylesheet" href="../../assets/css/main.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/" />
     <link
@@ -35,6 +35,15 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css"
     />
+    <style>
+      pre {
+        background-color: #f2f2f2;
+        padding: 16px;
+        border-radius: 4px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -61,7 +70,7 @@
         </nav>
       </div>
     </header>
-    
+
     <main id="main-artikel">
       <button class="sidebar-menu-toggle">
         <i class="fi fi-ts-sidebar"></i>
@@ -75,158 +84,109 @@
             <h3>Tutorial HTML</h3>
           </div>
           <div class="sidebar-content">
-            <div class="sidebar-list-content active"><a href="#">Pengenalan HTML</a></div>
-            <div class="sidebar-list-content"><a href="table.html">Table</a></div>
+            <div class="sidebar-list-content">
+              <a href="pengenalan-html.html">Pengenalan HTML</a>
+            </div>
+            <div class="sidebar-list-content active"><a href="#">Table</a></div>
           </div>
         </div>
       </section>
       <section class="artikel">
         <div class="container">
           <div class="header-artikel">
-            <h1>Pengenalan HTML</h1>
-            <div class="next-button">
-              <a href="table.html" class="button"
-                  >Next: Table</a>
+            <h1>Table - HTML</h1>
+            <div class="next-and-back-button">
+              <div>
+                <a href="pengenalan-html.html" class="button"
+                  >Back: Pengenalan</a
+                >
+              </div>
+              <div><a href="form.html" class="button">Next: Form</a></div>
             </div>
           </div>
-          <div class="isi-artikel">
+          <section class="isi-artikel">
+            <h2>Contoh Table HTML</h2>
+
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>N</th>
+                  <th>Umur</th>
+                  <th>Kota</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>30</td>
+                  <td>Jakarta</td>
+                </tr>
+                <tr>
+                  <td>Jane Doe</td>
+                  <td>25</td>
+                  <td>Bandung</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Definisi Table HTML</h2>
             <p>
-              HTML adalah singkatan dari HyperText Markup Language, yaitu bahasa
-              pemrograman yang digunakan untuk membuat struktur dan isi halaman
-              web.
+              Table HTML adalah elemen yang digunakan untuk membuat tabel data.
+              Tabel HTML terdiri dari baris (
+              <tr>
+                ) dan kolom (
+                <td>
+                  ). Tabel HTML dapat digunakan untuk menampilkan data tabular
+                  seperti data statistik, daftar produk, dan lain-lain.
+                </td>
+              </tr>
             </p>
+
+            <h2>Contoh Kode Table HTML</h2>
+            <img
+              src="https://media.discordapp.net/attachments/1173275057389306009/1208766456385245194/image.png?ex=65e47a7c&is=65d2057c&hm=c1d87c9f48ad9a290c1932c91379a106e350aa88f5c47e60fec7b7a0a22ca2df&=&format=webp&quality=lossless&width=252&height=350"
+              alt=""
+            />
+
+            <h2>Pengertian Table Cells</h2>
             <p>
-              HTML terdiri dari tag-tag yang digunakan untuk mendefinisikan
-              berbagai elemen halaman web, seperti judul, paragraf, gambar, dan
-              tautan.
+              Table cells (sel tabel) adalah elemen yang digunakan untuk mengisi
+              tabel. Setiap sel tabel dapat berisi teks, gambar, atau elemen
+              HTML lainnya.
             </p>
-            <h2>Contoh Tag HTML</h2>
-            <ul>
-              <li><code>&lt;h1&gt;</code> - Judul utama</li>
-              <li><code>&lt;p&gt;</code> - Paragraf</li>
-              <li><code>&lt;img&gt;</code> - Gambar</li>
-              <li><code>&lt;a&gt;</code> - Tautan</li>
-            </ul>
-            <br />
-            <h2>Belajar HTML</h2>
+
+            <h2>Contoh Kode Table Cells</h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Nama</th>
+                  <th>Umur</th>
+                  <th>Kota</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>30</td>
+                  <td>Jakarta</td>
+                </tr>
+                <tr>
+                  <td>Jane Doe</td>
+                  <td>25</td>
+                  <td>Bandung</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Definisi Table HTML</h2>
             <p>
-              Banyak sumber online yang dapat membantu Anda mempelajari HTML,
-              seperti:
+              Table HTML adalah elemen yang digunakan untuk membuat tabel data.
+              Tabel HTML terdiri dari baris(<code>&lt;tr&gt;</code>) dan kolom
+              (<code>&lt;td&gt;</code>). Tabel HTML dapat digunakan untuk
+              menampilkan data tabular seperti data statistik, daftar produk,
+              dan lain-lain.
             </p>
-            <ul>
-              <li><a href="https://www.w3schools.com/html/">W3Schools</a></li>
-              <li>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                  >Mozilla Developer Network</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.khanacademy.org/computing/computer-programming/html-css"
-                  >Khan Academy</a
-                >
-              </li>
-            </ul>
-            <h2>Struktur Dasar Halaman HTML</h2>
-            <p>Berikut adalah struktur dasar halaman HTML:</p>
-            <ul>
-              <li><code>&lt;html&gt;</code> - Tag pembuka HTML</li>
-              <li>
-                <code>&lt;head&gt;</code> - Bagian kepala HTML, berisi informasi
-                tentang halaman
-              </li>
-              <li><code>&lt;title&gt;</code> - Judul halaman</li>
-              <li><code>&lt;/head&gt;</code> - Tag penutup kepala HTML</li>
-              <li>
-                <code>&lt;body&gt;</code> - Bagian isi HTML, berisi konten halaman
-              </li>
-              <li><code>&lt;/body&gt;</code> - Tag penutup isi HTML</li>
-              <li><code>&lt;/html&gt;</code> - Tag penutup HTML</li>
-            </ul>
-            <h2>Struktur HTML</h2>
-            <br />
-            <div
-              class="ws-grey"
-              style="width: 99%; border: 1px solid grey; padding: 3px; margin: 0"
-            >
-              &lt;html&gt;
-              <div
-                style="
-                  width: 90%;
-                  border: 1px solid grey;
-                  padding: 3px;
-                  margin: 20px;
-                "
-              >
-                &lt;head&gt;
-                <div
-                  style="
-                    width: 90%;
-                    border: 1px solid grey;
-                    padding: 5px;
-                    margin: 20px;
-                  "
-                >
-                  &lt;title&gt;Title&lt;/title&gt;
-                </div>
-                &lt;/head&gt;
-              </div>
-              <div
-                class="ws-grey"
-                style="
-                  width: 90%;
-                  border: 1px solid grey;
-                  padding: 3px;
-                  margin: 20px;
-                "
-              >
-                &lt;body&gt;
-                <div
-                  class="w3-white"
-                  style="
-                    width: 90%;
-                    border: 1px solid grey;
-                    padding: 3px;
-                    margin: 20px;
-                  "
-                >
-                  <div
-                    style="
-                      width: 90%;
-                      border: 1px solid grey;
-                      padding: 5px;
-                      margin: 20px;
-                    "
-                  >
-                    &lt;h1&gt;Heading&lt;/h1&gt;
-                  </div>
-                  <div
-                    style="
-                      width: 90%;
-                      border: 1px solid grey;
-                      padding: 5px;
-                      margin: 20px;
-                    "
-                  >
-                    &lt;p&gt;Paragraf.&lt;/p&gt;
-                  </div>
-                  <div
-                    style="
-                      width: 90%;
-                      border: 1px solid grey;
-                      padding: 5px;
-                      margin: 20px;
-                    "
-                  >
-                    &lt;p&gt;Paragraf Lainnya.&lt;/p&gt;
-                  </div>
-                </div>
-                &lt;/body&gt;
-              </div>
-              &lt;/html&gt;
-            </div>
-            <br />
-          </div>
+          </section>
         </div>
       </section>
     </main>

@@ -223,6 +223,25 @@ p {
   margin-top: 20px;
 }
 
+.next-button {
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.next-and-back-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.isi-artikel {
+  border-top: 1px solid #ccc;
+  width: 100%;
+  padding-top: 10px;
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -241,6 +260,20 @@ p {
   background-color: #222;
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+table {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+th {
+  background-color: #ddd;
+  text-align: center;
+}
+
+td {
+  padding: 5px;
 }
 
 
@@ -284,6 +317,9 @@ footer {
 @media (max-width: 768px) {
   header {
     position: static;
+  }
+  table {
+    width: auto;
   }
 
   .naratic-navbar {
