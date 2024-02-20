@@ -192,7 +192,7 @@ main {
 }
 .artikel {
   flex: 1;
-  margin-left: 20px; 
+  margin-left: 10px; 
   padding: 20px; 
 }
 
@@ -285,14 +285,28 @@ td {
 code,
 pre {
   color: #c0392b;
-  font-family: Inconsolata, "Andale Mono", Andale, monowidth;
   background-color: #ecf0f1;
-  border: 1px solid #dfdfdf;
-  border-radius: 2px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-family: monospace;
+  font-size: 40px;
+  white-space: pre-wrap;
 }
 
 code {
   padding: 2px 6px;
+}
+
+/* Styling untuk tag `pre` */
+pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 14px;
 }
 
 
